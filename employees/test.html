@@ -1,17 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Stephen Hallick | Stier Supply Company</title>
 
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="../images/logo.png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Stephen Hallick | Stier Supply Company">
+<meta property="og:description" content="Field Manager">
+<meta property="og:image" content="https://stiersupplyco.github.io/contact/images/logo.png">
+<meta property="og:url" content="https://stiersupplyco.github.io/contact/employees/stephenhallick.html">
+<meta property="og:type" content="website">
+
 <style>
+
 body{
 font-family:Arial,sans-serif;
 background:#f5f5f5;
+color:#222;
 text-align:center;
 padding:40px;
+margin:0;
+transition:background .3s,color .3s;
 }
 
 .card{
@@ -21,6 +36,7 @@ margin:auto;
 padding:30px;
 border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,.2);
+transition:background .3s;
 }
 
 .company-title{
@@ -52,10 +68,17 @@ background:#0054A6;
 color:white;
 text-decoration:none;
 padding:15px;
-margin:15px 0;
+margin:20px 0;
 border-radius:8px;
 font-size:18px;
 font-weight:bold;
+transition:all .25s ease;
+}
+
+a.button:hover{
+background:#003b78;
+transform:translateY(-2px);
+box-shadow:0 6px 12px rgba(0,0,0,.25);
 }
 
 .info{
@@ -67,6 +90,40 @@ font-size:13px;
 .info a{
 color:#0054A6;
 text-decoration:none;
+transition:color .2s;
+}
+
+.info a:hover{
+color:#003b78;
+text-decoration:underline;
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark){
+
+body{
+background:#121212;
+color:#f0f0f0;
+}
+
+.card{
+background:#1e1e1e;
+box-shadow:0 5px 15px rgba(0,0,0,.5);
+}
+
+h2{
+color:#cfcfcf;
+}
+
+.info a{
+color:#5ba8ff;
+}
+
+.info a:hover{
+color:#8bc3ff;
+}
+
 }
 
 </style>
@@ -81,23 +138,46 @@ text-decoration:none;
 Stier Supply Company
 </div>
 
-<img src="../images/logo.png">
+<img src="../images/logo.png" alt="Stier Supply Company Logo">
 
 <h1>Stephen Hallick</h1>
 
 <h2>Field Manager</h2>
 
 <a class="button" href="../contacts/stephenhallick.vcf">
-📇 Save Contact
+📇 Add Contact
 </a>
 
 <div class="info">
 
-<p>📞 <a href="tel:+18436858398">843-685-8398</a></p>
+<p>
+📞
+<a href="tel:+18436858398">
+843-685-8398
+</a>
+</p>
 
-<p>✉ <a href="mailto:stephen.hallick@stiersupply.com">stephen.hallick@stiersupply.com</a></p>
+<p>
+✉
+<a href="mailto:stephen.hallick@stiersupply.com">
+stephen.hallick@stiersupply.com
+</a>
+</p>
 
-<p>🌐 <a href="https://www.stiersupply.com/">https://www.stiersupply.com/</a></p>
+<p>
+🌐
+<a href="https://www.stiersupply.com/" target="_blank">
+www.stiersupply.com
+</a>
+</p>
+
+<p>
+📍
+<a href="https://maps.apple.com/?q=324+Cameron+Circle+Suite+D+Myrtle+Beach+SC+29579">
+324 Cameron Circle, Suite D<br>
+Myrtle Beach, SC 29579
+</a>
+</p>
 
 </div>
 
