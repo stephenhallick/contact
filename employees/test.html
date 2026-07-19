@@ -11,7 +11,7 @@
 
 <meta name="theme-color" content="#0054A6">
 
-<!-- Favicon -->
+
 <link rel="icon" type="image/png" href="../images/logo.png">
 
 
@@ -23,12 +23,12 @@
 <meta property="og:type" content="website">
 
 
-<!-- Font Awesome Icons -->
+<!-- Icons -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
-<!-- Structured Contact Metadata -->
+<!-- Contact Metadata -->
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -57,8 +57,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <style>
 
 
-/* Global */
-
 *{
 box-sizing:border-box;
 }
@@ -86,19 +84,14 @@ align-items:center;
 justify-content:center;
 
 padding:15px;
-
 margin:0;
 
-transition:
-background .3s,
-color .3s;
+transition:.3s;
 
 }
 
 
-
-/* NFC optimized card
-   Designed to fit on one phone screen */
+/* NFC single-screen card */
 
 .card{
 
@@ -107,7 +100,7 @@ background:white;
 width:100%;
 max-width:420px;
 
-padding:25px 22px;
+padding:22px 20px;
 
 border-radius:20px;
 
@@ -116,10 +109,7 @@ text-align:center;
 box-shadow:
 0 10px 30px rgba(0,0,0,.15);
 
-animation:
-fadeUp .45s ease;
-
-transition:.3s;
+animation:fadeUp .45s ease;
 
 }
 
@@ -129,7 +119,7 @@ transition:.3s;
 
 from{
 opacity:0;
-transform:translateY(20px);
+transform:translateY(15px);
 }
 
 to{
@@ -145,19 +135,19 @@ transform:translateY(0);
 
 .logo{
 
-width:130px;
+width:125px;
 
-max-width:35vw;
-
-margin-bottom:10px;
+margin-bottom:8px;
 
 }
 
 
 
+/* Company */
+
 .company-title{
 
-font-size:21px;
+font-size:20px;
 
 font-weight:700;
 
@@ -171,7 +161,7 @@ linear-gradient(
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 
-margin-bottom:12px;
+margin-bottom:8px;
 
 }
 
@@ -179,9 +169,9 @@ margin-bottom:12px;
 
 h1{
 
-font-size:27px;
+font-size:26px;
 
-margin:5px 0;
+margin:3px 0;
 
 font-weight:700;
 
@@ -197,24 +187,23 @@ font-weight:500;
 
 color:#666;
 
-margin:0 0 15px;
+margin:0 0 12px;
 
 }
 
 
 
-/* Main Contact Button */
+/* Save button */
 
 .save-button{
 
 display:flex;
 
-justify-content:center;
-
 align-items:center;
 
-gap:10px;
+justify-content:center;
 
+gap:8px;
 
 background:
 linear-gradient(
@@ -223,25 +212,22 @@ linear-gradient(
 #0077cc
 );
 
-
 color:white;
 
 text-decoration:none;
 
-padding:15px;
+padding:14px;
 
 border-radius:12px;
 
-font-size:18px;
+font-size:17px;
 
 font-weight:700;
 
-margin:15px 0;
-
+margin:12px 0;
 
 box-shadow:
-0 8px 20px rgba(0,84,166,.35);
-
+0 8px 18px rgba(0,84,166,.35);
 
 transition:.25s;
 
@@ -253,22 +239,19 @@ transition:.25s;
 
 transform:translateY(-2px);
 
-box-shadow:
-0 12px 25px rgba(0,84,166,.45);
-
 }
 
 
 
-/* Information */
+/* Contact Info */
 
 .info{
 
 font-size:14px;
 
-line-height:1.7;
+line-height:1.4;
 
-margin-top:10px;
+margin-top:8px;
 
 }
 
@@ -276,15 +259,15 @@ margin-top:10px;
 
 .info p{
 
-margin:10px 0;
+margin:7px 0;
 
 display:flex;
 
 justify-content:center;
 
-align-items:center;
+align-items:flex-start;
 
-gap:8px;
+gap:9px;
 
 }
 
@@ -293,6 +276,8 @@ gap:8px;
 .info i{
 
 width:18px;
+
+margin-top:3px;
 
 color:#0054A6;
 
@@ -318,22 +303,32 @@ text-decoration:underline;
 
 
 
+/* Address */
+
+.address{
+
+font-size:13px;
+
+line-height:1.35;
+
+}
+
+
+
 /* Mobile */
 
 @media(max-width:400px){
 
 .card{
 
-padding:20px 15px;
-
-border-radius:16px;
+padding:18px 15px;
 
 }
 
 
-.company-title{
+.logo{
 
-font-size:19px;
+width:110px;
 
 }
 
@@ -344,12 +339,11 @@ font-size:24px;
 
 }
 
-
 .save-button{
 
 font-size:16px;
 
-padding:14px;
+padding:13px;
 
 }
 
@@ -385,7 +379,7 @@ box-shadow:
 
 h2{
 
-color:#b8b8b8;
+color:#bdbdbd;
 
 }
 
@@ -393,7 +387,7 @@ color:#b8b8b8;
 
 .info i{
 
-color:#5ba8ff;
+color:#70b8ff;
 
 }
 
@@ -407,23 +401,14 @@ color:#70b8ff;
 
 
 
-.save-button{
-
-box-shadow:
-0 8px 25px rgba(0,120,255,.35);
-
 }
 
-
-
-}
 
 
 </style>
 
 
 </head>
-
 
 
 <body>
@@ -433,9 +418,7 @@ box-shadow:
 
 
 <div class="company-title">
-
 Stier Supply Company
-
 </div>
 
 
@@ -456,8 +439,7 @@ Field Manager
 
 
 
-<a 
-class="save-button"
+<a class="save-button"
 href="../contacts/stephenhallick.vcf">
 
 <i class="fa-solid fa-address-card"></i>
@@ -472,13 +454,10 @@ Add Contact
 
 
 <p>
-
 <i class="fa-solid fa-phone"></i>
 
 <a href="tel:+18436858398">
-
 843-685-8398
-
 </a>
 
 </p>
@@ -486,13 +465,10 @@ Add Contact
 
 
 <p>
-
 <i class="fa-solid fa-envelope"></i>
 
 <a href="mailto:stephen.hallick@stiersupply.com">
-
 stephen.hallick@stiersupply.com
-
 </a>
 
 </p>
@@ -500,33 +476,25 @@ stephen.hallick@stiersupply.com
 
 
 <p>
-
 <i class="fa-solid fa-globe"></i>
 
-<a 
-href="https://www.stiersupply.com/"
-target="_blank">
-
+<a href="https://www.stiersupply.com/" target="_blank">
 www.stiersupply.com
-
 </a>
 
 </p>
 
 
 
-<p>
+<p class="address">
 
 <i class="fa-solid fa-location-dot"></i>
 
-
-<a 
-href="https://www.google.com/maps/search/?api=1&query=324+Cameron+Circle+Suite+D+Myrtle+Beach+SC+29579"
+<a href="https://www.google.com/maps/search/?api=1&query=324+Cameron+Circle+Suite+D+Myrtle+Beach+SC+29579"
 target="_blank">
 
-324 Cameron Circle<br>
-Suite D<br>
-Myrtle Beach, SC 29579
+324 Cameron Circle, Suite D<br>
+Myrtle Beach, SC
 
 </a>
 
